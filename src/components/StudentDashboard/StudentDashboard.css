@@ -1,0 +1,126 @@
+.student-dashboard {
+  /* Copy code to element you want to animate */
+  animation: customAni 2s ease 0s normal none;
+}
+/* Copy this code after the above code */
+@keyframes customAni {
+  0% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.welcome-message {
+  display: flex;
+  gap: 1rem;
+  border-bottom:  2px solid var(--dark_light_color);
+}
+.welcome-message .icon i,
+.welcome-message .header-message h3 {
+  color: var(--light_white_color);
+  margin-bottom: 0;
+}
+.welcome-message .header-message p {
+  color: var(--dark_light_color);
+}
+.welcome-message .icon i {
+  font-size: 2rem;
+}
+
+.quick-access {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+.quick-access h4 {
+  color: var(--light_white_color);
+  font-size: 1.2rem !important;
+  margin-bottom: 2rem;
+}
+.quick-access .access-link {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px;
+  --tw-bg-opacity: 1;
+  border: 1px solid rgb(31 41 55 / var(--tw-bg-opacity));
+}
+.quick-access.access-link:hover {
+  background-color: #4B5563;
+  background-color: red !important;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.quick-access .access-link p {
+  margin-bottom: 0;
+}
+.quick-access .access-link h3,
+.link-icon i {
+  margin-bottom: 0;
+}
+
+.access-link .link-icon i {
+  color: var(--light_white_color);
+  background-color: #38383a;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.link-text h3 {
+  color: var(--light_white_color);
+  font-size: 1rem;
+}
+.link-text p {
+  color: var(--dark_light_color);
+  font-size: 0.8rem;
+}
+
+/* !project and events displayer buttons */
+
+.display-event-project {
+  display: inline-block;
+  /* background-color: black; */
+  border-bottom: 2px solid  #111827;
+  /* border-radius: 10px; */
+  margin-top: 2rem;
+  overflow: hidden;
+  width: 70%;
+  display: flex;
+}
+
+.display-event-project button {
+  padding: 0.5rem 1rem;
+  margin: 0;
+  border: 0;
+  background-color: none !important;
+  background-color: transparent;
+  color: var(--light_white_color);
+  transition: all 0.4s;
+  width: 50%;
+  transition: all 0.4s;
+  border-bottom: 2px solid  #111827;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.display-event-project button:hover{
+  color:rgb(74, 222, 128) ;
+}
+.display-event-project button:nth-child(1){
+  border-bottom-left-radius: 10px;
+}
+.display-event-project button:nth-child(2){
+  border-bottom-right-radius: 10px;
+}
+.active_btn {
+  background-color: #4B5563 !important;
+  color: rgb(74, 222, 128) !important;
+  transition: all 0.4s;
+  border-bottom: 2px solid rgb(74, 222, 128) !important;
+}

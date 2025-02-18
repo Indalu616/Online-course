@@ -1,0 +1,32 @@
+.rating-review {
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+}
+.rating-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rating-row .progress-bar {
+  height: 10px;
+  width: 100%;
+  background-color: #4b5563;
+}
+.rating-row .progress-bar .progress-percent {
+  background-color: #eab308;
+  height: 100%;
+}
+.rating-row h1 {
+  color: #eab308;
+  text-align: center;
+  -webkit-text-stroke: 2px #eab308;
+  -webkit-text-fill-color: #eab308;
+}
+.rating-row .avg-rate p {
+  text-align: center;
+  color: #eab308;
+  font-size: 1.2rem;
+}
+.rating-review .rating-row .start-rate {
+  color: white;
+}

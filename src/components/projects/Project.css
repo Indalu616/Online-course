@@ -1,0 +1,8 @@
+.project {
+  margin-top: 4rem;
+}
+.project h2 {
+  color: var(--light_white_color);
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+}

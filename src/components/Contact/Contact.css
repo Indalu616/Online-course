@@ -1,0 +1,95 @@
+.contact {
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+}
+.contact h2 {
+  color: var(--light_white_color);
+}
+
+.contact .contact-container {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+.contact-container input,
+.contact-container input,
+.contact-container textarea {
+  background-color: transparent;
+  color: var(--light_white_color) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  outline: none;
+}
+.contact-container input::placeholder,.contact-container textarea::placeholder{
+  color: var(--dark_light_color);
+}
+.contact-container input:focus,
+.contact-container textarea:focus {
+  background-color: transparent;
+}
+.contact-container h3 {
+  color: var(--light_white_color);
+}
+.contact-container p,
+.contact-container label {
+  color: var(--dark_light_color);
+}
+.contact-container button {
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+.contact-container button:hover {
+  background-color: rgba(255, 255, 255, 0.86);
+}
+.contact .faqs {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+.faqs h3 {
+  color: var(--light_white_color);
+}
+.faqs .items .item .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.faqs .item .header p {
+  margin-bottom: 0;
+  color: var(--light_white_color);
+  font-size: 1.5rem;
+}
+.faqs .item .header h5 {
+  color: var(--dark_light_color);
+}
+.faqs .item .answer-box p {
+  color: var(--dark_light_color);
+  font-size: 1rem;
+  margin-bottom: 0;
+  transition: all 0.4s;
+}
+.answer-box {
+  transition: all 0.4s;
+}
+.faqs .items .item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+/* !class to toggle answer */
+
+.show_answer {
+  display: block;
+  transition: all 0.4s;
+}
+.hide_answer {
+  display: none;
+  transition: all 0.4s;
+}

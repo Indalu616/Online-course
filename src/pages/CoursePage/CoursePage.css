@@ -1,0 +1,115 @@
+.course-page {
+  background-color: white;
+  width: 300px;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.course-page .course-page-side-bar-header h3 {
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+.course-page .course-page-contents {
+  height: 100vh;
+  overflow-y: scroll;
+  border-top: 1px solid black;
+  padding-bottom: 4rem;
+}
+.accordion-body .sub-titles {
+  width: 100%;
+}
+.accordion-body .sub-titles button {
+  width: 100%;
+  display: block;
+  margin-top: 1rem;
+  background-color: none;
+  text-align: left;
+  border: none;
+  padding: 0.5rem;
+}
+
+/* !right-side section */
+
+.course-video-container {
+  margin-left: 300px;
+}
+.course-video-container .course-video-header {
+  background-color: #1d1e27;
+  padding: 0.5rem;
+}
+.course-video-container .course-video-header h3 {
+  color: var(--light_white_color);
+  font-size: 1.3rem;
+  padding: 0.2rem 1rem;
+  margin-top: 1rem;
+}
+.course-video-container .course-video-header button {
+  padding: 0.2rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  margin-top: 1rem;
+}
+
+.video-box {
+  padding: 2rem;
+}
+
+.course-related-info {
+  padding: 2rem;
+}
+.course-related-info p {
+  color: var(--dark_light_color);
+  line-height: 2.5;
+  font-size: 1rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--dark_light_color);
+  transition: all 0.4s;
+
+  cursor: pointer;
+}
+
+.course-related-info .content-button {
+  display: none;
+}
+.course-related-info .active {
+  color: rgb(74, 222, 128);
+  border-color: rgb(74, 222, 128);
+}
+
+.video-icon {
+  margin-right: 5px;
+  color: red;
+  font-size: 1rem;
+}
+
+/* !media query */
+
+@media (max-width: 991px) {
+  .show-contents {
+    display: block;
+  }
+  .hide-contents {
+    display: none;
+  }
+  .course-related-info .content-button {
+    display: block;
+  }
+  .course-page-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .course-page {
+    position: relative;
+    order: 2;
+    width: 100%;
+    height: fit-content;
+  }
+  .course-video-container {
+    order: 1;
+    margin-left: 0;
+  }
+}

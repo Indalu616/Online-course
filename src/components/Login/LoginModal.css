@@ -1,0 +1,13 @@
+.modal {
+display: flex !important;
+padding-top: 6rem !important;
+justify-content: center;
+}
+
+.modal-body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  width: 100%;
+}

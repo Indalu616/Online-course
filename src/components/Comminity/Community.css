@@ -1,0 +1,23 @@
+.community {
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+}
+.community h2 {
+  color: var(--light_white_color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.community p {
+  color: var(--dark_light_color);
+}
+.community button {
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.4s;
+}
+.community button:hover{
+    background-color: rgba(255, 255, 255, 0.795);
+}
+

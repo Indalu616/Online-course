@@ -1,0 +1,104 @@
+.join_community {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.join_community h2 {
+  color: var(--light_white_color);
+}
+.join_community p {
+  color: var(--dark_light_color);
+}
+.connection_container {
+  /* background-color: red; */
+  width: 70%;
+  margin: auto;
+  border-left: 2px solid var(--dark_light_color);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  position: relative;
+  padding: 1rem;
+}
+.connection_container .connection_info_box {
+ 
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  padding: 1rem;
+  width: 100%;
+  margin: auto;
+  margin-left: 0.5rem;
+}
+.connection_container .connection_info_box h3 {
+  color: var(--light_white_color);
+  font-size: 1.2rem;
+}
+.connection_info_box .form_box input {
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  color: var(--dark_light_color);
+}
+.connection_info_box .form_box input::placeholder {
+  color: var(--dark_light_color);
+}
+.connection_info_box .form_box label {
+  color: var(--light_white_color);
+}
+.connection_info_box .form_box button {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: var(--light_white_color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.4s;
+}
+.connection_info_box .form_box button:hover {
+  background-color: rgba(255, 255, 255, 0.77);
+}
+.connection_info_box .form_box button:hover span {
+  margin-left: 0.1rem;
+}
+.connection_info_box .social_links {
+  display: flex;
+  gap: 1rem;
+}
+.connection_info_box .social_links button {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  color: var(--light_white_color);
+  padding: 0.2rem 1rem;
+  transition: all 0.4s;
+}
+
+.connection_info_box .social_links button:hover {
+  background-color: #27272a;
+}
+
+/* !design for over-lay class */
+.over-lay {
+  background-color: var(--light_white_color);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -1rem;
+}
+
+/* !media query */
+
+@media (max-width: 1037px) {
+  .connection_container {
+    width: 100%;
+    margin-left: 1rem;
+  }
+}

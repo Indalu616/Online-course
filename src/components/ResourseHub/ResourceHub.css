@@ -1,0 +1,116 @@
+.resource-hub h2 {
+  color: var(--light_white_color);
+  font-size: 1.5rem;
+}
+.resource-hub p {
+  color: var(--dark_light_color);
+  margin-bottom: 3rem;
+}
+.resource-box {
+  /* background-color: black;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 1rem;
+ */
+  /*  */
+  background: #2a2a2a;
+  margin-top: 2rem;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+.search-bar {
+  display: flex;
+  gap: 2rem;
+}
+.search-bar .search-btn button {
+  border: none;
+}
+.resource-box h3 {
+  color: var(--light_white_color);
+  font-size: 1rem;
+}
+.resource-box .resourse-access-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.resource-box .resourse-access-btn button {
+  /* border: none;
+    width: 100%;
+    padding: 0.25rem 0;
+    border-radius: 10px; */
+
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #6200ea;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+}
+
+.resource-box .resourse-access-btn button a {
+  text-decoration: none;
+  color: var(--light_white_color);
+}
+.resource-box .resourse-access-btn button:hover {
+  background: #3700b3;
+}
+
+.resource-box i {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+.pdf-icon {
+  color: #ff5252;
+}
+.ppt-icon {
+  color: #ff9800;
+}
+.video-icon {
+  color: #448aff;
+}
+.word-icon {
+  color: #5c6bc0;
+}
+
+/* !pagination */
+
+.page-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+.page-number p {
+  margin-bottom: 0;
+}
+
+.page-number button {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgb(74, 222, 128);
+  transition: all 0.4s;
+}
+.page-number button:hover {
+  background-color: #1e293b;
+}
+.page-number button:disabled{
+  color: var(--dark_light_color);
+  cursor: no-drop;
+}
+.page-number button i {
+  font-size: 13px;
+}

@@ -1,0 +1,12 @@
+.about-course{
+    /* background-color: #1F2937; */
+    padding: 2rem;
+}
+.about-course h3{
+    color: var(--light_white_color);
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+.about-course ul li,.about-course p {
+    color: var(--dark_light_color);
+}

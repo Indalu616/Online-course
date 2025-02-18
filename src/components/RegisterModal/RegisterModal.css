@@ -1,0 +1,39 @@
+.registration-page .user_registration_section label {
+  color: var(--light-white-color);
+  color: red !important;
+}
+
+.modal-body .user_registration_section h3 {
+  color: white !important;
+  font-size: 1.3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  line-height: 2.5;
+}
+
+.modal-body .user_registration_section button {
+  padding: 0.2rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-color: transparent;
+  color: var(--light_white_color);
+  transition: all 0.4s;
+}
+.modal-body .user_registration_section button:hover {
+  background-color: #374151;
+}
+
+.modal-body .label {
+  color: var(--dark_light_color) !important;
+}
+.modal-body .input,
+.modal-body .input:focus,
+.modal-body .input:valid {
+  background-color: #374151;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white !important;
+}
+.modal-body input {
+  color: var(--light-white-color) !important;
+}
+.modal-body .input::placeholder {
+  color: var(--dark_light_color);
+}
