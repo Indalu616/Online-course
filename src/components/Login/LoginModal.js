@@ -21,7 +21,7 @@ const navigate=useNavigate()
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in
-        navigate("/dashboard")
+        navigate("/Online-course/dashboard")
         const user = userCredential.user;
         console.log(user)
         // ...

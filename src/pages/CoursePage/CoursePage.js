@@ -71,7 +71,7 @@ function CoursePage() {
         <div className="course-video-header shadow">
           <div className="row">
             <div className="col-md-2">
-              <Link to="/dashboard" style={{ textDecoration: "none" }}>
+              <Link to="/Online-course/dashboard" style={{ textDecoration: "none" }}>
                 {" "}
                 <button>
                   <span>

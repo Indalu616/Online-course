@@ -134,7 +134,7 @@ function CourseCatalog() {
                       <p>Designed by: Indalu Kelbesa</p>
                       <button>
                         <Link
-                          to={`/course-page/${course.id}`}
+                          to={`/Online-course/course-page/${course.id}`}
                           style={{ textDecoration: "none" }}
                         >
                           Start Learning

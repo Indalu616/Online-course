@@ -23,7 +23,7 @@ const ProtectedRoute = () => {
     return () => unsubscribe();
   }, []);
 console.log(auth.currentUser)
-  return auth.currentUser? <Outlet /> : <Navigate to="/" />;
+  return auth.currentUser? <Outlet /> : <Navigate to="/Online-course" />;
 };
 
 export default ProtectedRoute;

@@ -11,12 +11,12 @@ function App() {
       <Routes>
       <Route element={<ProtectedRoute />}>
       <Route
-          path="/course-page/:id"
+          path="/Online-course/course-page/:id"
           element={<CoursePage/>}
         ></Route>
-          <Route path="/dashboard" element={<Dashboard />}></Route>
+          <Route path="/Online-course/dashboard" element={<Dashboard />}></Route>
         </Route>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/Online-course" element={<Home />}></Route>
       </Routes>
     </>
   );
