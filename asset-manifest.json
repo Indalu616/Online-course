@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Online-course/static/css/main.40a89421.css",
+    "main.js": "/Online-course/static/js/main.657d3a8b.js",
+    "static/media/power.jpeg": "/Online-course/static/media/power.41d29a176cc34c428c92.jpeg",
+    "static/media/coding_workshop.png": "/Online-course/static/media/coding_workshop.369173a6d638b134f29c.png",
+    "static/media/python_workshop.jpg": "/Online-course/static/media/python_workshop.cdd499d939bf601faa7b.jpg",
+    "static/media/pizza.jpg": "/Online-course/static/media/pizza.e5e5501ffa1310b16d6b.jpg",
+    "static/media/sql_home.png": "/Online-course/static/media/sql_home.5c93a8fce7b0ed253d96.png",
+    "static/media/python_home.png": "/Online-course/static/media/python_home.8f96a3bb1aa65c24e8f3.png",
+    "static/media/git_home.png": "/Online-course/static/media/git_home.9ae1b13cab6045a40209.png",
+    "static/media/clinic.jpg": "/Online-course/static/media/clinic.72d12a5b86f7e62d5aa6.jpg",
+    "static/media/project_review.webp": "/Online-course/static/media/project_review.02ab4629841612096cb6.webp",
+    "static/media/church.webp": "/Online-course/static/media/church.a1298ceadaa8303fbe92.webp",
+    "static/media/frontend_workshop.jpg": "/Online-course/static/media/frontend_workshop.6f30ebe7bebffc7be7df.jpg",
+    "index.html": "/Online-course/index.html",
+    "main.40a89421.css.map": "/Online-course/static/css/main.40a89421.css.map",
+    "main.657d3a8b.js.map": "/Online-course/static/js/main.657d3a8b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40a89421.css",
+    "static/js/main.657d3a8b.js"
+  ]
+}
