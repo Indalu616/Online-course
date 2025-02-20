@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Online-course/static/css/main.16980b14.css",
-    "main.js": "/Online-course/static/js/main.dd2871f1.js",
+    "main.css": "/Online-course/static/css/main.b5d4e97d.css",
+    "main.js": "/Online-course/static/js/main.97f1de64.js",
     "static/media/power.jpeg": "/Online-course/static/media/power.41d29a176cc34c428c92.jpeg",
     "static/media/coding_workshop.png": "/Online-course/static/media/coding_workshop.369173a6d638b134f29c.png",
     "static/media/python_workshop.jpg": "/Online-course/static/media/python_workshop.cdd499d939bf601faa7b.jpg",
@@ -14,11 +14,11 @@
     "static/media/church.webp": "/Online-course/static/media/church.a1298ceadaa8303fbe92.webp",
     "static/media/frontend_workshop.jpg": "/Online-course/static/media/frontend_workshop.6f30ebe7bebffc7be7df.jpg",
     "index.html": "/Online-course/index.html",
-    "main.16980b14.css.map": "/Online-course/static/css/main.16980b14.css.map",
-    "main.dd2871f1.js.map": "/Online-course/static/js/main.dd2871f1.js.map"
+    "main.b5d4e97d.css.map": "/Online-course/static/css/main.b5d4e97d.css.map",
+    "main.97f1de64.js.map": "/Online-course/static/js/main.97f1de64.js.map"
   },
   "entrypoints": [
-    "static/css/main.16980b14.css",
-    "static/js/main.dd2871f1.js"
+    "static/css/main.b5d4e97d.css",
+    "static/js/main.97f1de64.js"
   ]
 }
