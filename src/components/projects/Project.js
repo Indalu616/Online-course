@@ -1,11 +1,15 @@
 import React from "react";
 import "./Project.css";
 import { projects } from "./projects";
+import { Typography } from "@mui/material";
 function Project() {
   return (
     <div className="project">
       <div className="container">
-        <h2>Explore Our Projects</h2>
+        <Typography variant="h5" sx={{ color: "text.primary" }} style={{marginBottom:"2rem"}}>
+          Explore Our Projects
+        </Typography>
+
         <div className="row">
           {projects.map((project) => {
             return (
@@ -16,7 +20,11 @@ function Project() {
                       src={project.im_url}
                       alt="poster"
                       className="img-fluid"
-                      style={{ height: "200px", width: "100%",objectFit:"cover"}}
+                      style={{
+                        height: "200px",
+                        width: "100%",
+                        objectFit: "cover",
+                      }}
                     />
                   </div>
                   <div className="event-info">

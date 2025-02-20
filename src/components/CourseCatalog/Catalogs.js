@@ -145,4 +145,105 @@ export const catalogs = [
       },
     ],
   },
+  {
+    id: 5,
+    name: "Java Fundamentals",
+    img_url: "https://i.ytimg.com/vi/xk4_1vDrzzo/maxresdefault.jpg",
+    category: "Programming",
+    rate: 4.8,
+    reviews: 2000,
+    contents: [
+      {
+        id: 1,
+        section: 1,
+        title: "Introduction to Java",
+        subTitles: [
+          { name: "What is Java?", videoId: "xk4_1vDrzzo" },
+          { name: "Setting Up Java Environment", videoId: "A74TOX803D0" },
+          { name: "Java Syntax and Basics", videoId: "eIrMbAQSU34" },
+        ],
+      },
+      {
+        id: 2,
+        section: 2,
+        title: "Data Types and Variables",
+        subTitles: [
+          { name: "Primitive Data Types", videoId: "BGTx91t8q50" },
+          { name: "Variables and Constants", videoId: "xk4_1vDrzzo" },
+        ],
+      },
+      {
+        id: 3,
+        section: 3,
+        title: "Control Flow Statements",
+        subTitles: [
+          { name: "Conditional Statements", videoId: "A74TOX803D0" },
+          { name: "Loops in Java", videoId: "eIrMbAQSU34" },
+        ],
+      },
+      {
+        id: 4,
+        section: 4,
+        title: "Object-Oriented Programming in Java",
+        subTitles: [
+          { name: "Classes and Objects", videoId: "BGTx91t8q50" },
+          { name: "Inheritance and Polymorphism", videoId: "xk4_1vDrzzo" },
+        ],
+      },
+      {
+        id: 5,
+        section: 5,
+        title: "Exception Handling",
+        subTitles: [
+          { name: "Try-Catch Blocks", videoId: "A74TOX803D0" },
+          { name: "Custom Exceptions", videoId: "eIrMbAQSU34" },
+        ],
+      },
+      {
+        id: 6,
+        section: 6,
+        title: "Java Collections Framework",
+        subTitles: [
+          { name: "List and ArrayList", videoId: "BGTx91t8q50" },
+          { name: "Map and HashMap", videoId: "xk4_1vDrzzo" },
+        ],
+      },
+      {
+        id: 7,
+        section: 7,
+        title: "File Handling in Java",
+        subTitles: [
+          { name: "Reading Files", videoId: "A74TOX803D0" },
+          { name: "Writing to Files", videoId: "eIrMbAQSU34" },
+        ],
+      },
+      {
+        id: 8,
+        section: 8,
+        title: "Multithreading and Concurrency",
+        subTitles: [
+          { name: "Introduction to Threads", videoId: "BGTx91t8q50" },
+          { name: "Synchronization in Java", videoId: "xk4_1vDrzzo" },
+        ],
+      },
+      {
+        id: 9,
+        section: 9,
+        title: "Advanced Java Concepts",
+        subTitles: [
+          { name: "Lambda Expressions", videoId: "A74TOX803D0" },
+          { name: "Stream API", videoId: "eIrMbAQSU34" },
+        ],
+      },
+      {
+        id: 10,
+        section: 10,
+        title: "Java Development Tools",
+        subTitles: [
+          { name: "Maven and Gradle", videoId: "BGTx91t8q50" },
+          { name: "JUnit Testing", videoId: "xk4_1vDrzzo" },
+        ],
+      },
+    ],
+  }
 ];

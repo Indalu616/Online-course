@@ -1,7 +1,8 @@
 import { useState } from "react";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "./RegisterModal.css";
+import { Button, Typography } from "@mui/material";
 function RegisterModal({name}) {
   const [show, setShow] = useState(false);
 
@@ -10,7 +11,8 @@ function RegisterModal({name}) {
 
   return (
     <div className="registration-page">
-      <Button variant="primary" onClick={handleShow}>
+    
+      <Button onClick={handleShow} fontSize="small">
         Register Free
       </Button>
 

@@ -1,3 +1,8 @@
+.course-page-container{
+  background-color: #1d1e27 !important;
+  min-height: 100vh;
+}
+
 .course-page {
   background-color: white;
   width: 300px;

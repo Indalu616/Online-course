@@ -1,20 +1,27 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import "./CoursePage.css";
-import Accordion from "react-bootstrap/Accordion";
+// import Accordion from "react-bootstrap/Accordion";
 
 import CourseVideo from "../../components/CourseVideo/CourseVideo";
 import { Link, useParams } from "react-router-dom";
 import AboutCourse from "../../components/AboutCourse/AboutCourse";
 import RatingAndReview from "../../components/RatingAndReviews/RatingAndReview";
 import { catalogs } from "../../components/CourseCatalog/Catalogs";
+
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
+import { Button } from "@mui/material";
+
 function CoursePage() {
   const { id } = useParams();
-  const course=catalogs.filter((c) => c.id === parseInt(id))
+  const course = catalogs.filter((c) => c.id === parseInt(id));
 
   const [active, setActive] = useState(1);
-  const [currentVideo, setCurrentVideo] = useState(
-   
-  );
+  const [currentVideo, setCurrentVideo] = useState();
   return (
     <div className="course-page-container">
       <div
@@ -30,36 +37,43 @@ function CoursePage() {
           </div>
           <div className="course-page-contents">
             <div className="course-content">
-              <Accordion defaultActiveKey="0">
-                {course[0]?.contents?.map((sec) => {
-                  return (
-                    <Accordion.Item eventKey={sec.id} key={sec.id}>
-                      <Accordion.Header>
+              {course[0].contents.map((sec) => {
+                return (
+                  <Accordion>
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon />}
+                      aria-controls="panel1-content"
+                      id="panel1-header"
+                    >
+                      <Typography component="span">
                         Section {sec.section}: {sec.title}
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        {sec.subTitles.map((subT, i) => {
-                          return (
-                            <div className="sub-titles" key={i}>
-                              <button
-                                onClick={() => setCurrentVideo(subT.videoId)}
-                              >
-                                <span style={{ marginRight: "10px" }}>
-                                  {i + 1}.
-                                </span>
-                                <span className="video-icon">
-                                  <i className="fa-solid fa-video"></i>
-                                </span>
-                                {subT.name}
-                              </button>
-                            </div>
-                          );
-                        })}
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  );
-                })}
-              </Accordion>
+                      </Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      {sec.subTitles.map((subT, i) => {
+                        return (
+                          <div key={i}>
+                            <Button
+                              onClick={() => setCurrentVideo(subT.videoId)}
+                              style={{textAlign:"left"}}
+                            >
+                              <span style={{ marginRight: "10px" }}>
+                                {i + 1}.
+                              </span>
+                            
+                                {/* <OndemandVideoIcon fontSize="small"/> */}
+                             
+                              {subT.name}
+                            </Button>
+                          </div>
+                        );
+                      })}
+                    </AccordionDetails>
+                  </Accordion>
+                );
+              })}
+
+  
             </div>
           </div>
         </div>
@@ -71,7 +85,10 @@ function CoursePage() {
         <div className="course-video-header shadow">
           <div className="row">
             <div className="col-md-2">
-              <Link to="/Online-course/dashboard" style={{ textDecoration: "none" }}>
+              <Link
+                to="/Online-course/dashboard"
+                style={{ textDecoration: "none" }}
+              >
                 {" "}
                 <button>
                   <span>
@@ -82,7 +99,7 @@ function CoursePage() {
               </Link>
             </div>
             <div className="col-md-10">
-              <h3>Full Stack Web Development</h3>
+              <h3>{course[0].name}</h3>
             </div>
           </div>
         </div>

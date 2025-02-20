@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./StudentDashboard.css";
+import SchoolIcon from "@mui/icons-material/School";
 import Events from "../Events/Events";
 import Project from "../projects/Project";
+import { Button, Typography } from "@mui/material";
 function StudentDashboard() {
   const [activeBtn, setActiveBtn] = useState(1);
   return (
@@ -9,10 +11,13 @@ function StudentDashboard() {
       <div className="container">
         <div className="welcome-message">
           <div className="icon">
-            <i className="fa-solid fa-graduation-cap"></i>
+            <SchoolIcon fontSize="large" />
           </div>
           <div className="header-message">
-            <h3>Welcome, Student</h3>
+            <Typography variant="h4" sx={{ color: "text.primary" }}>
+              Welcome, Student
+            </Typography>
+
             <p>
               Start your ADUDC learning journey today and achieve your goals.
             </p>
@@ -99,23 +104,25 @@ function StudentDashboard() {
           </div>
         </div>
         {/* display events and projects */}
-        
-        <div className="display-event-project">
-          <button
+
+        <div style={{marginTop:"3rem"}}>
+          <Button
+            fontSize="small"
             className={activeBtn === 1 ? "active_btn" : ""}
             onClick={() => setActiveBtn(1)}
           >
             Events
-          </button>
-          <button
+          </Button>
+          <Button
+            fontSize="small"
             className={activeBtn === 2 ? "active_btn" : ""}
             onClick={() => setActiveBtn(2)}
           >
             Projects
-          </button>
+          </Button>
         </div>
-       {activeBtn===1&& <Events />}
-       {activeBtn===2&& <Project />}
+        {activeBtn === 1 && <Events />}
+        {activeBtn === 2 && <Project />}
       </div>
     </div>
   );

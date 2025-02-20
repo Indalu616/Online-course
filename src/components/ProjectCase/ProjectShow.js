@@ -2,7 +2,7 @@ import React from 'react'
 
 function ProjectShow() {
   return (
-    <div>ProjectShow</div>
+    <div>Coming Soon Feature...</div>
   )
 }
 

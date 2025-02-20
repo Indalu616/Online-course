@@ -9,7 +9,7 @@ import Community from "../../components/Comminity/Community";
 import Contact from "../../components/Contact/Contact";
 function Home() {
   return (
-    <>
+    <div className="home">
       <NavbarComp />
       <Hero />
       <HowToJoin />
@@ -17,7 +17,7 @@ function Home() {
       <Feature />
       <Community />
       <Contact />
-    </>
+    </div>
   );
 }
 

@@ -1,6 +1,6 @@
 .contact {
   margin-top: 8rem;
-  margin-bottom: 6rem;
+  padding-bottom: 6rem;
 }
 .contact h2 {
   color: var(--light_white_color);

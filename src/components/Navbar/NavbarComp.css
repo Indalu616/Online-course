@@ -3,6 +3,7 @@
   top: 0;
   width: 100vw;
   z-index: 500;
+  background-color: #111827;
 }
 .nav-header {
   display: flex;
