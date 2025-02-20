@@ -1,13 +1,17 @@
 import { useState } from "react";
-import {signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "./LoginModal.css";
 import { auth } from "../../firebaseConfig";
-import {useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import BasicAlerts from "../Alerts/Alert";
+import { CircularProgress } from "@mui/material";
 function LoginModal() {
-
-const navigate=useNavigate()
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [show, setShow] = useState(false);
@@ -18,17 +22,22 @@ const navigate=useNavigate()
   // ! a function to sign in user
 
   const signInUser = () => {
+    setIsLoading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in
-        navigate("/Online-course/dashboard")
+        navigate("/Online-course/dashboard");
         const user = userCredential.user;
-        console.log(user)
+        setIsLoading(false);
+        setSuccess(true);
+        console.log(user);
         // ...
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
+        setError(errorMessage);
+        setIsLoading(false)
       });
   };
 
@@ -50,6 +59,7 @@ const navigate=useNavigate()
               and a thriving network of developers. */}
             </p>
             <div className="form_box">
+              {error && <BasicAlerts message={error} />}
               <div class="mb-3">
                 <label for="email" class="form-label">
                   Email
@@ -59,7 +69,7 @@ const navigate=useNavigate()
                   class="form-control"
                   id="email"
                   placeholder="name@example.com"
-                  onChange={(e)=>setEmail(e.target.value)}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
 
@@ -72,14 +82,21 @@ const navigate=useNavigate()
                   class="form-control"
                   id="password"
                   placeholder="*******"
-                  onChange={(e)=>setPassword(e.target.value)}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
               <button onClick={signInUser}>
-                Sign In{" "}
-                <span>
-                  <i className="fa-solid fa-arrow-right"></i>
-                </span>
+                {isLoading ? (
+                  <CircularProgress size={30} />
+                ) : (
+                  <div>
+                    {" "}
+                    Sign In{" "}
+                    <span>
+                      <i className="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </div>
+                )}
               </button>
             </div>
           </div>

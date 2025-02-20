@@ -1,24 +1,37 @@
 import React, { useState } from "react";
-import {createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import "./HowToJoin.css";
 import { auth } from "../../firebaseConfig";
+
+import CircularProgress from "@mui/material/CircularProgress";
+import Box from "@mui/material/Box";
+import BasicAlerts from "../Alerts/Alert";
+import SuccessMessage from "../Alerts/Success";
 function HowToJoin() {
-  
-  const [email,setEmail]=useState("")
-  const [password,setPassword]=useState("")
+  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [success,setSuccess]=useState(false)
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   // !a function to register user
-   
+
   const registerUser = async () => {
+    setIsLoading(true);
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed up
         const user = userCredential.user;
-        console.log(user)
+        setIsLoading(false);
+        setSuccess(true)
+        console.log(user);
         // ...
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
+        setError(errorMessage);
+        setIsLoading(false);
+        setSuccess(false)
         // ..
       });
   };
@@ -39,6 +52,8 @@ function HowToJoin() {
               and a thriving network of developers.
             </p>
             <div className="form_box">
+              {error && <BasicAlerts message={error} />}
+              {success&& <SuccessMessage message={"Account created"} />}
               <div class="mb-3">
                 <label for="email" class="form-label">
                   Email
@@ -48,8 +63,7 @@ function HowToJoin() {
                   class="form-control"
                   id="email"
                   placeholder="name@example.com"
-
-                  onChange={(e)=>setEmail(e.target.value)}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div class="mb-3">
@@ -72,14 +86,17 @@ function HowToJoin() {
                   class="form-control"
                   id="password"
                   placeholder="*******"
-                  onChange={(e)=>setPassword(e.target.value)}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
               <button onClick={registerUser}>
-                Create Account{" "}
-                <span>
-                  <i className="fa-solid fa-arrow-right"></i>
-                </span>
+                {isLoading ? (
+                  <CircularProgress size={30}/>
+                ) :<div>Create Account<span>
+                <i className="fa-solid fa-arrow-right"></i>
+              </span></div>
+                  
+                }{" "}
               </button>
             </div>
           </div>

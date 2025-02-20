@@ -245,5 +245,119 @@ export const catalogs = [
         ],
       },
     ],
+  },
+  {
+    "id": 6,
+    "name": "Graphic Design Essentials",
+    "img_url": "https://i.ytimg.com/vi/VGJ_VdjgSsk/maxresdefault.jpg",
+    "category": "Design",
+    "rate": 4.8,
+    "reviews": 1500,
+    "contents": [
+      {
+        "id": 1,
+        "section": 1,
+        "title": "Introduction to Graphic Design",
+        "subTitles": [
+          { "name": "What is Graphic Design?", "videoId": "pTB0EiLXUC8" },
+          { "name": "The Role of a Graphic Designer", "videoId": "VfGW0Qiy2I0" },
+          { "name": "Overview of Design Disciplines", "videoId": "T6fnHEv9HR0" }
+        ]
+      },
+      {
+        "id": 2,
+        "section": 2,
+        "title": "Design Principles and Elements",
+        "subTitles": [
+          { "name": "Understanding Design Principles", "videoId": "O8i7OKbWmRM" },
+          { "name": "Exploring Design Elements", "videoId": "f2Fy0rdYXl8" },
+          { "name": "Balance and Alignment in Design", "videoId": "QhGg8gkEJSk" },
+          { "name": "Contrast and Emphasis Techniques", "videoId": "zADjYraP5kY" },
+          { "name": "Proximity and Repetition in Layouts", "videoId": "kYwW6MJg4gQ" }
+        ]
+      },
+      {
+        "id": 3,
+        "section": 3,
+        "title": "Typography",
+        "subTitles": [
+          { "name": "Introduction to Typography", "videoId": "sj8Sg8qnjOg" },
+          { "name": "Choosing the Right Fonts", "videoId": "bWPMSSsVdPk" },
+          { "name": "Typography Hierarchy and Spacing", "videoId": "jVYgQ1fWgkM" }
+        ]
+      },
+      {
+        "id": 4,
+        "section": 4,
+        "title": "Color Theory",
+        "subTitles": [
+          { "name": "Basics of Color Theory", "videoId": "Qj1FK8n7WgY" },
+          { "name": "Creating Effective Color Schemes", "videoId": "Qj1FK8n7WgY" },
+          { "name": "Color Psychology in Design", "videoId": "Qj1FK8n7WgY" }
+        ]
+      },
+      {
+        "id": 5,
+        "section": 5,
+        "title": "Tools and Software",
+        "subTitles": [
+          { "name": "Introduction to Adobe Illustrator", "videoId": "Ib8UBwu3yGA" },
+          { "name": "Getting Started with Adobe Photoshop", "videoId": "IyR_uYsRdPs" },
+          { "name": "Basics of Adobe InDesign", "videoId": "2we8yqgVJrY" },
+          { "name": "Exploring Free Design Tools", "videoId": "Jgk3u44W2i4" }
+        ]
+      },
+      {
+        "id": 6,
+        "section": 6,
+        "title": "Branding and Identity",
+        "subTitles": [
+          { "name": "Understanding Branding Basics", "videoId": "VfGW0Qiy2I0" },
+          { "name": "Designing a Logo", "videoId": "VfGW0Qiy2I0" },
+          { "name": "Creating Brand Guidelines", "videoId": "VfGW0Qiy2I0" }
+        ]
+      },
+      {
+        "id": 7,
+        "section": 7,
+        "title": "Layout and Composition",
+        "subTitles": [
+          { "name": "Grid Systems in Design", "videoId": "QhGg8gkEJSk" },
+          { "name": "Effective Use of White Space", "videoId": "QhGg8gkEJSk" },
+          { "name": "Designing for Print vs. Digital", "videoId": "QhGg8gkEJSk" }
+        ]
+      },
+      {
+        "id": 8,
+        "section": 8,
+        "title": "Visual Communication",
+        "subTitles": [
+          { "name": "Basics of Visual Communication", "videoId": "T6fnHEv9HR0" },
+          { "name": "Using Imagery and Icons Effectively", "videoId": "T6fnHEv9HR0" },
+          { "name": "Infographics Design", "videoId": "T6fnHEv9HR0" }
+        ]
+      },
+      {
+        "id": 9,
+        "section": 9,
+        "title": "User Experience (UX) Basics",
+        "subTitles": [
+          { "name": "Introduction to UX Design", "videoId": "O8i7OKbWmRM" },
+          { "name": "Principles of User-Centered Design", "videoId": "O8i7OKbWmRM" },
+          { "name": "Wireframing Essentials", "videoId": "O8i7OKbWmRM" }
+        ]
+      },
+      {
+        "id": 10,
+        "section": 10,
+        "title": "Portfolio Development",
+        "subTitles": [
+          { "name": "Building a Graphic Design Portfolio", "videoId": "pTB0EiLXUC8" },
+          { "name": "Showcasing Your Work Online", "videoId": "pTB0EiLXUC8" },
+          { "name": "Preparing for Design Interviews", "videoId": "pTB0EiLXUC8" }
+        ]
+      }
+    ]
   }
+  
 ];
